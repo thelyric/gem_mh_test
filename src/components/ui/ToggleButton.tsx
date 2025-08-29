@@ -1,5 +1,3 @@
-import React from "react";
-
 type ToggleButtonProps = {
   items: string[];
   value: string;

@@ -108,7 +108,7 @@ const InputNumber = ({
 
   return (
     <div
-      className={`flex items-center justify-between bg-[#212121] rounded-lg overflow-hidden ${containerClassName} group focus-within:ring-1 focus-within:ring-blue-500`}
+      className={`flex items-center justify-between bg-[#212121] rounded-lg overflow-hidden ${containerClassName} group focus-within:ring-1 focus-within:ring-blue-500 has-[input:hover]:bg-[#3B3B3B] has-[input:focus]:!bg-[#212121]`}
     >
       {/* Minus */}
       <button

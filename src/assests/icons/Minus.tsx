@@ -1,4 +1,3 @@
-import React from "react";
 
 const Minus = ({ size = 20, color = "#F9F9F9" }) => {
   return (

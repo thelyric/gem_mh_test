@@ -1,5 +1,3 @@
-import React from "react";
-
 const Plus = ({ size = 20, color = "#F9F9F9" }) => {
   return (
     <svg
