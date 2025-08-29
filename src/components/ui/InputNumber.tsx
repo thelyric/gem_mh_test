@@ -37,7 +37,7 @@ const InputNumber = ({
 }: InputNumberProps) => {
   const [input, setInput] = useState<string>(formatValue(value, isFloat));
   const [error, setError] = useState<{
-    ref: React.RefObject<HTMLElement>;
+    ref: React.RefObject<HTMLButtonElement | null>;
     msg: string;
   } | null>(null);
 
@@ -148,7 +148,10 @@ const InputNumber = ({
 
       {/* Error Popper */}
       {error && (
-        <Popper offsetY={14} anchorRef={error.ref}>
+        <Popper
+          offsetY={14}
+          anchorRef={error.ref as React.RefObject<HTMLButtonElement>}
+        >
           {error.msg}
         </Popper>
       )}

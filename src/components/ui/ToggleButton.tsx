@@ -3,7 +3,7 @@ import React from "react";
 type ToggleButtonProps = {
   items: string[];
   value: string;
-  onChange: (selected: string) => void;
+  onChange: (selected: "%" | "px") => void;
   className?: string;
 };
 
@@ -34,7 +34,7 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
           key={item}
           type="button"
           className={getButtonClass(value === item)}
-          onClick={() => onChange(item)}
+          onClick={() => onChange(item as "%" | "px")}
         >
           {item}
         </button>
